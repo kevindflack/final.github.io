@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@300&display=swap');
+
+body{
+    background-color: gray !important;
+}
+
+#header{
+    background-color: white;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav{
+    color: #4BB3FD;
+    padding-top: .5vh;
+    font-size: 2vh;
+    align-items: center;
+}
+
+#user{
+    height: 5vh;
+    justify-self: end;
+    margin: 1vh;
+}
+#car{
+    height: 6vh;
+}
+
+#top{
+    background-color: #00487c;
+    color: white;
+    margin-top: 6vh;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#home{
+    background-color: #e1d89f;
+    height: 60vh;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.grid-column-layout {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.right-box {
+    height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.left-box {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 56, 134);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.top-search {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.pic {
+    background-image: url("img/silverado.jpg");
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 1/2;
+    background-color: #e1d89f;
+    margin: 10px;
+}
+
+.bottom {
+    grid-row: 2/3;
+    background-color: rgb(83, 188, 236);
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
+    height: 15vh;
+    font-size: 65px;
+}
+
+.homeimg{
+    width: 80%;
+    height: 80%;
+    background-image: url(img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 6vh;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.tradecontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.tradeheader {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-bottom: 30px;
+}
+
+.tradeform {
+    text-align: center;
+    padding: 10px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.traderesults {
+    text-align: center;
+}
+
+#homesearch{
+    text-align: center;
+    background-color: #00487c;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    height: 5vh;
+    padding-top: 5px;
+    border-radius: 8px;
+}
+
+#grid{
+    display: grid;
+    grid-template-rows: 1fr 3fr 10fr 2fr;
+    grid-gap: 15px;
+}
+#paygrid{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-gap: 15px;
+}
+.tradetext {
+    font-size: 75px;
+    padding-top: 40px;
+}
+
+.tradeimage {
+    background-image: url(img/key.jpeg);
+}
+
+.search-button{
+    color: white;
+}
+
+.contactpage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.contactbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    grid-gap: 10px;
+  
+}
+
+.contactmap {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(img/Map.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.contactmaptextbox {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contactmaptextheader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contactmaptextbody {
+    text-align: center;
+}
+
+.hourstextbox {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+}
+
+.hourstextheader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.hourstextbody {
+    text-align: center;
+}
+
+.phonetextbox {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.phonetextheader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.phonetextbody {
+    text-align: center;
+}
+
+.containerbox {
+    display: grid;
+    grid-template-rows: 1fr 2fr 10fr 2fr;
+    grid-template-columns: 3fr 2fr;
+    height: 100vh;
+    grid-gap: 6px;
+}
+
+.headingbox {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.carname {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-color: #00487c;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boxleft {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #e1d89f;
+    grid-template-rows: 4fr 1fr;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+
+.boxright {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: #e1d89f;
+    padding: 20px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.carimage {
+    height: 100%;
+    grid-row: 1/2;
+    background-image: url("img/raptor.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.carinfo {
+    padding: 20px;
+    color: black;
+    grid-row: 4/5;
+    grid-column: 1/3;
+    background-color: #e1d89f;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.basebackground {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.basebackground2 {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.basebackground3 {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    height: 325px;
+}
+
+.contactheader {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-bottom: 30px;
+}
+
+.headertext {
+    font-family: "Monserrat", sans-serif;
+}
+
+.bodytext {
+    font-family: "Open Sans", sans-serif;
+}
+
+#paymentgrid{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+.traderesults {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.paymentgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pleft{
+    grid-column: 2;
+}
+
+.paymentpic{
+    background-image: url(img/raptor.jpeg);
+    grid-column: 1;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    background-position: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+    .paymentpic{
+        height: 40vh;
+        margin-right: 4vw;
+    }
+    .paymentgrid{
+        display: inline;
+        height: 94vh;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    .grid-column-layout {
+        display: grid;
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    
+    .right-box {
+        height: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+    .left-box {
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(56, 56, 134);
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+    }
+    
+    .top-search {
+        grid-row: 1/2;
+    }
+    
+    .pic {
+        background-image: url("img/silverado.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row: 1/2;
+    }
+    
+    .bottom {
+        grid-row: 2/3;
+        background-color: rgb(83, 188, 236);
+        margin: 10px;
+        border-radius: 25px;
+        text-align: center;
+        height: 100%;
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+    .containerbox {
+        display: grid;
+        grid-template-rows: 1fr 2fr 5fr 4fr 4fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        grid-gap: 6px;
+    }
+    
+    .headingbox {
+        grid-row: 1/2;
+    }
+    
+    .carname {
+        grid-row: 2/3;
+        background-color: #00487c;
+        font-size: 45px;
+        color: white;
+        text-align: center;
+    }
+
+    .smallscreenpic {
+        margin-right: 15px;
+        border-radius: 25px;
+        grid-row: 3/4;
+        height: 60vh;
+        background-image: url("img/raptor.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .boxright {
+        grid-row: 5/6;
+        background-color: #e1d89f;
+    }
+    
+    .carinfo {
+        padding: 20px;
+        color: black;
+        grid-row: 4/5;
+        background-color: #e1d89f;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 850px) {
+    
+    .contactbody {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+
+    .contactmap {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(img/Map.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+    
+    .contactmaptextbox {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .hourstextbox {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .phonetextbox {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactheader {
+        grid-column: 1/2;
+        grid-row: 1/2;
+   }
+
+   .basebackground2 {
+    background-color: #e1d89f;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -85px
+}
+}
